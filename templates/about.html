@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block header %}
+<header class="bg-dark py-1">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Контактные данные</h1>            
+        </div>
+    </div>
+</header>    
+{% endblock header %}
+
+{% block content %}
+<div class='container'>
+    <div class='row'>
+        <div class="col gx-5 py-5 align-self-center"><img class="card-img-top mb-5 mb-md-0" src="{{ shop_photo }}" alt="..." /></div>
+        <div class="col gx-5 py-5 align-self-center">
+            <h3>Наш адрес:</h3>
+            <p>{{ address.street }} {{ address.building }}</p>
+            <p>e-mail: {{ address.email }}</p>
+            <p>Телефон для связи {{address.tel}}</p>
+        </div>
+    </div
+</div>
+{% endblock content %}
+
+
